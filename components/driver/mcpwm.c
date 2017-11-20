@@ -45,7 +45,7 @@ static portMUX_TYPE mcpwm_spinlock = portMUX_INITIALIZER_UNLOCKED;
 #define MCPWM_DB_ERROR          "MCPWM DEADTIME TYPE ERROR"
 
 #define MCPWM_BASE_CLK (2 * APB_CLK_FREQ)   //2*APB_CLK_FREQ 160Mhz
-#define MCPWM_CLK_PRESCL 15       //MCPWM clock prescale 
+#define MCPWM_CLK_PRESCL 1       //MCPWM clock prescale 
 #define TIMER_CLK_PRESCALE 9      //MCPWM timer prescales
 #define MCPWM_CLK (MCPWM_BASE_CLK/(MCPWM_CLK_PRESCL +1))
 #define MCPWM_PIN_IGNORE    (-1)
